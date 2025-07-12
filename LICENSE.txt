@@ -1,0 +1,42 @@
+PDF TO EXCEL CONVERTER PRO - END USER LICENSE AGREEMENT
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE USING THE SOFTWARE.
+
+This End User License Agreement ("Agreement") is a legal contract between you (either an individual or an entity) and Your Company Name ("Company") for the PDF to Excel Converter Pro software ("Software").
+
+By installing, copying, or using the Software, you agree to be bound by the terms of this Agreement.
+
+1. GRANT OF LICENSE
+Subject to the terms of this Agreement, Company grants you a non-exclusive, non-transferable license to use the Software on a single computer for your personal or business use.
+
+2. RESTRICTIONS
+You may not:
+- Copy, modify, distribute, or create derivative works of the Software
+- Reverse engineer, decompile, or disassemble the Software
+- Rent, lease, or sublicense the Software
+- Use the Software on more than one computer simultaneously
+- Remove or alter any proprietary notices or labels on the Software
+
+3. OWNERSHIP
+The Software is protected by copyright and other intellectual property laws. Company retains all rights, title, and interest in the Software.
+
+4. TERM
+This license is effective until terminated. You may terminate it at any time by destroying all copies of the Software. It will also terminate if you fail to comply with any term of this Agreement.
+
+5. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. COMPANY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+6. LIMITATION OF LIABILITY
+IN NO EVENT SHALL COMPANY BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+7. SUPPORT
+Company may provide support and updates at its sole discretion. Support is not guaranteed under this Agreement.
+
+8. GOVERNING LAW
+This Agreement shall be governed by the laws of [Your State/Country].
+
+By using the Software, you acknowledge that you have read this Agreement and agree to be bound by its terms and conditions.
+
+Copyright © 2024 Your Company Name. All rights reserved.
+
+For questions about this license, contact: legal@your-company.com 

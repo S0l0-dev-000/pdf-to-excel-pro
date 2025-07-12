@@ -1,0 +1,12 @@
+pandas>=1.5.0
+pdfplumber>=0.7.0
+tabula-py>=2.5.0
+openpyxl>=3.0.0
+pathlib2>=2.3.0
+argparse>=1.4.0
+flask>=2.3.0
+werkzeug>=2.3.0
+
+# Build dependencies (optional - only needed for creating executable)
+pyinstaller>=5.0.0
+cx-freeze>=6.0.0 
