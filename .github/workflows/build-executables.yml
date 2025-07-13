@@ -1,0 +1,89 @@
+name: Build Cross-Platform Executables
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build-mac:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Build Mac executable
+      run: |
+        pyinstaller --onefile --windowed --name "PDF_Excel_Converter_Pro_Mac" desktop_app.py
+    
+    - name: Upload Mac executable
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDF_Excel_Converter_Pro_Mac
+        path: dist/PDF_Excel_Converter_Pro_Mac
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Build Windows executable
+      run: |
+        pyinstaller --onefile --windowed --name "PDF_Excel_Converter_Pro_Windows" desktop_app.py
+    
+    - name: Upload Windows executable
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDF_Excel_Converter_Pro_Windows
+        path: dist/PDF_Excel_Converter_Pro_Windows.exe
+
+  build-gui-versions:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas openpyxl pdfplumber PyPDF2 tkinter
+    
+    - name: Build GUI executable
+      run: |
+        pyinstaller --onefile --windowed gui_converter.py
+      if: matrix.os == 'windows-latest'
+    
+    - name: Upload GUI executable
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDF_Excel_Converter_GUI_${{ matrix.os }}
+        path: dist/
+      if: matrix.os == 'windows-latest' 
